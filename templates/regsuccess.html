@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\bootstrap-5.2.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <video id="bgv" autoplay loop muted poster="/static/bgi.png">
+        <source src="/static/bg1.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/static/logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                </ul>
+                <a href="/login"><button type="button" class="btn btn-danger">Login</button></a>&nbsp&nbsp&nbsp&nbsp
+                <a href="/register"><button type="button" class="btn btn-danger">Sign-up</button></a>
+            </div>
+        </div>
+    </nav>
+    <p id="headingid">id: {{id}}</p>
+    <div id="logsign">
+        <a href="/login"><button id="logbutton" type="button" class="btn btn-warning">Login</button></a>&nbsp&nbsp&nbsp&nbsp
+    </div>
+</body>
+
+</html>

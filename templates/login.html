@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\bootstrap-5.2.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <video id="bgv" autoplay loop muted poster="/static/bgi.png">
+        <source src="/static/bg1.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">
+                <img src="/static/logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                </ul>
+                <a href="/login"><button type="button" class="btn btn-danger">Login</button></a>&nbsp&nbsp&nbsp&nbsp
+                <a href="/register"><button type="button" class="btn btn-danger">Sign-up</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="logreg">
+        <form action="/loginatt" method="post">
+            <div class="mb-3">
+                <label for="userid" class="form-label">User ID</label>
+                <input type="text" class="form-control" id="userid" aria-describedby="useridhelp" name="userid">
+                <div id="useridhelp" class="form-text">We'll never share your personal info with anyone.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+            </div>
+            <button type="submit" class="btn btn-warning">Login</button>
+        </form>
+    </div>
+    <div id="sideimage"><img src="/static/kevin.png" alt="" id="si"></div>
+</body>
+
+</html>

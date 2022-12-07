@@ -1,0 +1,280 @@
+#container {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    padding-left: 50px;
+    padding-right: 50px ;
+    width: 550px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-image: url("/static/redsmoke.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    animation-name: regfadein;
+    animation-duration: 1s;
+}
+
+.chars {
+    display: inline-block;
+    margin: 50px;
+}
+
+.icon {
+    object-fit: cover;
+    height: 100px;
+    width: 100px;
+}
+
+#character {
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+}
+
+#image {
+    object-fit: cover;
+    height: 650px;
+    width: 650px;
+}
+
+#bgv {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+@font-face {
+    font-family: Robus;
+    src: url(/static/Robus.otf)
+}
+
+#heading {
+    padding-top: 100px;
+    text-align: center;
+    font-family: Robus;
+    color: yellow;
+    font-size: 150px;
+    animation-name: fadein1;
+    animation-duration: 2s;
+}
+
+@keyframes fadein1{
+    0%{opacity: 0;}
+    35%{opacity: 0;}
+    65%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+
+#subheading {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Robus;
+    color: yellow;
+    font-size: 54px;
+    animation-name: fadein2;
+    animation-duration: 4s;
+}
+
+@keyframes fadein2{
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    65%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+#logsign {
+    padding-top: 50px;
+    text-align: center;
+    color: yellow;
+    animation-name: fadein3;
+    animation-duration: 4s;
+}
+
+@keyframes fadein3{
+    0%{opacity: 0;}
+    80%{opacity: 0;}
+    90%{opacity: 0.0;}
+    100%{opacity: 1;}
+}
+
+.form-label{
+    color: white;
+}
+
+.form-check-label{
+    color: white;
+}
+
+#logreg{
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px ;
+    width: 550px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-image: url("/static/frame.png");
+    border-radius: 50px;
+    animation-name: regfadein;
+    animation-duration: 1s;
+}
+
+@keyframes regfadein{
+    0%{
+        margin-left: -50px;
+        width: 10px;
+    }
+    100%{
+        margin-left: 50px;
+        width: 550px;
+    }
+    
+}
+
+#crousel{
+    opacity: 1;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        margin-top: 500px;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+#sideimage{
+    position: absolute;
+    right: 50px;
+    display: inline-block;
+}
+
+#si{
+    height: 700px;
+    width: 700px;
+    padding-left: 0px;
+    animation-name: squzein;
+    animation-duration: 3s;
+}
+
+@keyframes squzein{
+    0%{padding-left: 700px;}
+    50%{padding-left: 700px;}
+    100%{padding-left: 0px;}
+}
+
+#crousel{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#playbutton{
+    padding-top: 50px;
+    text-align: center;
+    color: yellow;
+}
+
+#ben1{
+    display:inline-block;
+    background-image: url(/static/Ben.png);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    bottom:0;
+    left:0;
+    animation-name: lefttoright;
+    animation-duration: 3s;
+}
+
+@keyframes lefttoright{
+    0%{
+        left:-500px;
+        opacity: 0;
+    }
+    100%{
+        left:0px;
+        opacity: 1;
+    }
+}
+
+#gwen1{
+    display:inline-block;
+    background-image: url(/static/Gwen.png);
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    z-index: -1;
+    position: fixed;
+    bottom:0;
+    right:0;
+    animation-name: righttoleft;
+    animation-duration: 3s;
+}
+
+@keyframes righttoleft{
+    0%{
+        right:-500px;
+        opacity: 0;
+    }
+    100%{
+        right:0px;
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: SpaceMission;
+    src: url(/static/SpaceMission.otf)
+}
+
+#headingid{
+    padding-top: 100px;
+    text-align: center;
+    font-family: SpaceMission;
+    color: yellow;
+    font-size: 150px;
+    animation-name: fadein1;
+    animation-duration: 2s;
+}
+
+#para{
+    width:40%;
+    height: 400px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+#img{
+    width:40%;
+    height: 400px;
+    background-color: brown;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 140px;
+    background-image: url(/static/vedant.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

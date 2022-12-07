@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\bootstrap-5.2.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/static/play.css">
+</head>
+
+<body>
+    <video id="bgv" autoplay loop muted poster="/static/bgi.png">
+        <source src="/static/bg2.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home?id={{t[0]}}">
+                <img src="/static/logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <a class="navbar-brand" href="/home?id={{t[0]}}">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"></li>
+                    <div class="badge bg-warning text-dark" style="width: 6rem;">
+                        ID: {{t[0]}}<br>Highscore: {{t[4]}}
+                    </div>
+                </li>
+
+                </ul>
+
+                <form action="/scoresubmit">
+                    <input type="text" name="id" value="{{t[0]}}" style="visibility: hidden;"> 
+                    <input id="finalscore" type="text" name="score" value="1" style="visibility: hidden;">  
+                    <button type="submit" class="btn btn-warning" value="submit">Submit Score</button></a>
+                </form>&nbsp&nbsp&nbsp&nbsp
+
+                &nbsp&nbsp&nbsp&nbsp
+
+
+                <a href="/"><button type="button" class="btn btn-danger">Logout</button></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="score">Enemy Number: 1</div>
+        <div id="gameover">
+            Game Over            
+        </div>
+        <div id="character">
+            {%if(char=="vedant")%}
+            <img id="char" src="/static/vedant.png" alt="">
+            {%elif(char=="arfa")%}
+            <img id="char" src="/static/arfa.png" alt="">
+            {%elif(char=="parag")%}
+            <img id="char" src="/static/parag.png" alt="">
+            {%elif(char=="sneha")%}
+            <img id="char" src="/static/sneha.png" alt="">
+            {%elif(char=="rajani")%}
+            <img id="char" src="/static/rajani.png" alt="">
+            {%elif(char=="chaitanya")%}
+            <img id="char" src="/static/chaitanya.png" alt="">
+            {%elif(char=="pallavi")%}
+            <img id="char" src="/static/pallavi.png" alt="">
+            {% endif %}
+
+        </div>
+        
+
+        
+        
+
+    
+        <div id="enemy" class="approach"><img id="ene" src="/static/kevin.png" alt=""></div>
+    </div>
+
+
+
+    <script src="/static/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/play.js"></script>
+</body>
+
+</html>

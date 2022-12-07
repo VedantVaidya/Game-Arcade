@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="\static\bootstrap-5.2.2-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <video id="bgv" autoplay loop muted poster="/static/bgi.png">
+        <source src="/static/bg1.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home?id={{t[0]}}">
+                <img src="/static/logo.png" alt="Bootstrap" width="30" height="24">
+            </a>
+            <a class="navbar-brand" href="/home?id={{t[0]}}">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <div class="badge bg-warning text-dark" style="width: 6rem;">
+                            ID: {{t[0]}}<br>Highscore: {{t[4]}}
+                        </div>
+                    </li>
+
+
+                </ul>
+                &nbsp&nbsp&nbsp&nbsp
+                <a href="/"><button type="button" class="btn btn-danger">Logout</button></a>
+            </div>
+        </div>
+    </nav>
+    <form action="/play">
+        <div id="container">
+            <div class="chars" onmouseover="vedant()">
+                <img src="/static/vedant.png" class="icon" alt=""><br>
+                <input type="radio" id="vedant" name="char" value="vedant" required>
+            </div><br>
+
+            <div class="chars" onmouseover="arfa()">
+                <img src="/static/arfa.png" class="icon"><br>
+                <input type="radio" id="arfa" name="char" value="arfa" required>
+            </div><br>
+
+            <div class="chars" onmouseover="parag()">
+                <img src="/static/parag.png" class="icon" alt=""><br>
+                <input type="radio" id="parag" name="char" value="parag" required>
+            </div><br>
+
+
+            <div class="chars" onmouseover="sneha()">
+                <img src="/static/sneha.png" class="icon" alt=""><br>
+                <input type="radio" id="sneha" name="char" value="sneha" required>
+            </div><br>
+
+            <div class="chars" onmouseover="rajani()">
+                <img src="/static/rajani.png" class="icon" alt=""><br>
+                <input type="radio" id="rajani" name="char" value="rajani" required>
+            </div><br>
+
+            <div class="chars" onmouseover="chaitanya()">>
+                <img src="/static/chaitanya.png" class="icon" alt=""><br>
+                <input type="radio" id="chaitanya" name="char" value="chaitanya" required>
+            </div><br>
+
+            <div class="chars" onmouseover="pallavi()">>
+                <img src="/static/pallavi.png" class="icon" alt=""><br>
+                <input type="radio" id="pallavi" name="char" value="pallavi" required>
+            </div><br>
+
+
+
+            <div id="playbutton">
+                <button type="submit" class="btn btn-warning"><h1>Play</h1></button>
+              </div>
+            <input type="text" value="{{t[0]}}" name="id" style="opacity: 0;">
+
+        </div>
+
+
+
+        <div id="character">
+            <img src="/static/vedant.png" id="image" alt="">
+        </div>
+
+
+
+    </form>
+
+
+    <script src="/static/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
