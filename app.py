@@ -128,5 +128,5 @@ if __name__=="__main__":
     app.run(debug=True)
 
 
-#create database gamearcade;
-#create table info(id int,name varchar(30),email varchar(30),password varchar(30),gender varchar(10),highscore int);
+# create database gamearcade;
+# create table info(id int,name varchar(30),email varchar(30),password varchar(30),gender varchar(10),highscore int);
