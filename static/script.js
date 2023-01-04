@@ -6,6 +6,14 @@ function vedant(){
     a=document.getElementById("image").src="/static/vedant.png";
 }
 
+function arvind(){
+    a=document.getElementById("image").src="/static/arvind.png";
+}
+
+function rashmi(){
+    a=document.getElementById("image").src="/static/rashmi.png";
+}
+
 function parag(){
     a=document.getElementById("image").src="/static/parag.png";
 }

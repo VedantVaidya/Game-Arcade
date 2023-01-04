@@ -41,12 +41,13 @@ def registeratt():
 
 @app.route("/loginatt",methods=["post"])
 def loginatt():
-    id=request.form["userid"]
+    email=request.form["email"]
     password=request.form["password"]
-    passcheck=dbm.loginatt(id)
+    passcheck=dbm.loginatt(email)
     if len(passcheck) == 0:
         return redirect("/login")
     elif password in passcheck[0]: 
+        id=passcheck[0][1]
         return redirect(f"/home?id={id}")
     return redirect("/login")  
 

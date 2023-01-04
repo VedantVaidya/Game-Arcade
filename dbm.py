@@ -12,11 +12,11 @@ def adddata(t):
     c.commit()
     c.close()
 
-def loginatt(id):
+def loginatt(email):
     c=getconnection()
     cur=c.cursor()
-    qur="select password from info where id=%s"
-    cur.execute(qur,id)
+    qur="select password,id from info where email=%s"
+    cur.execute(qur,email)
     a=cur.fetchall()
     c.commit()
     c.close()
